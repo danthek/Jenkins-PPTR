@@ -1,0 +1,32 @@
+{
+	"name": "jenkins-pptr",
+	"version": "1.0.0",
+	"description": "CI / CD with Puppeteer and Jenkins",
+	"main": "index.js",
+	"scripts": {
+		"e2e-test": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/e2e.test.js",
+		"smoke-test": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/smoke.test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/danthek/Jenkins-PPTR.git"
+	},
+	"keywords": [
+		"Puppeteer",
+		"Jenkins",
+		"Automation",
+		"Builds"
+	],
+	"author": "Aby",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/danthek/Jenkins-PPTR/issues"
+	},
+	"homepage": "https://github.com/danthek/Jenkins-PPTR#readme",
+	"dependencies": {
+		"chai": "^4.3.6",
+		"mocha": "^10.0.0",
+		"prettier": "^2.7.1",
+		"puppeteer": "^17.0.0"
+	}
+}
